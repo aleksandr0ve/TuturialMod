@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "TutorialMod",
+  "version": "${version}",
+  "name": "TutorialMod",
+  "description": "",
+  "authors": [
+    "Aleksandr0ve"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/TutorialMod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.aleksandr0ve.tutorialmod.client.TutorialModClient"
+    ],
+    "main": [
+      "ru.aleksandr0ve.tutorialmod.TutorialMod"
+    ]
+  },
+  "mixins": [
+    "TutorialMod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
